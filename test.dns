@@ -1,0 +1,10 @@
+.test.com:127.0.0.1:a
+=test.com:1.2.3.4:600
+=www.test.com:2.3.4.5:600
+#@test.com::aspmx.l.google.com:1
+#@test.com::alt1.aspmx.l.google.com:5
+#@test.com::alt2.aspmx.l.google.com:5
+#@test.com::aspmx2.googlemail.com:10
+#@test.com::aspmx3.googlemail.com:10
+#@test.com::aspmx4.googlemail.com:10
+#@test.com::aspmx5.googlemail.com:10
