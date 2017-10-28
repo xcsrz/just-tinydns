@@ -1,8 +1,6 @@
-# just-djbdns
+# just-tinydns
 
-This is a docker image to run a djbdns server for publishing public DNS records on the internet. 
-
-*If you're looking to run a local network DNS cache server search for "DNS cache" on https://hub.docker.com*
+This is a docker image to run a djbdns DNS server for publishing public DNS records on the internet, or "tinydns". *Not to be confused with a DNS cache for a local area network. That's the other form of djbdns.*
 
 #### Notes:
 
