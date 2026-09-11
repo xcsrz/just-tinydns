@@ -12,6 +12,8 @@ RUN mkdir /src ; cd /src ; \
     echo gcc -O2 -std=gnu11 -Wno-strict-prototypes -Wno-builtin-declaration-mismatch -Wno-error=implicit-function-declaration -Wno-error=incompatible-pointer-types -include /usr/include/errno.h > conf-cc && \
     make && make setup check
 
+RUN apk del gcc wget
+
 RUN tinydns-conf nobody nobody /srv/dns 0.0.0.0 
 
 COPY start.sh /start.sh
