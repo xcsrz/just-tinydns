@@ -9,7 +9,7 @@ RUN apk add make gcc g++ ucspi-tcp6 daemontools ca-certificates wget && update-c
 RUN mkdir /src ; cd /src ; \
     wget -O - https://cr.yp.to/djbdns/djbdns-1.05.tar.gz | tar xzf - ; \
     cd djbdns-1.05 ; \
-    echo gcc -O2 -include /usr/include/errno.h > conf-cc ; \
+    echo gcc -O2 -std=gnu11 -Wno-strict-prototypes -Wno-builtin-declaration-mismatch -Wno-error=implicit-function-declaration -Wno-error=incompatible-pointer-types -include /usr/include/errno.h > conf-cc && \
     make && make setup check
 
 RUN tinydns-conf nobody nobody /srv/dns 0.0.0.0 
