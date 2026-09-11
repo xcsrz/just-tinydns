@@ -24,5 +24,5 @@ RUN chmod +x /rebuild.sh
 
 COPY test.dns /srv/dns/root/data
 
-CMD '/start.sh'
+CMD ["/start.sh"]
 
